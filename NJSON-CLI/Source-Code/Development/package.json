@@ -1,0 +1,37 @@
+{
+  "name": "njcli",
+  "version": "1.0.0",
+  "description": "NJSON CLI - Boolean Language Framework Command Line Interface",
+  "main": "njcli.js",
+  "bin": {
+    "njcli": "./njcli.js"
+  },
+  "scripts": {
+    "start": "node njcli.js",
+    "test": "node tests/basic-test.js",
+    "wilson-check": "node njcli.js status --wilson"
+  },
+  "keywords": [
+    "njson",
+    "boolean-language",
+    "observational-mathematics",
+    "cli",
+    "wilson-mcp",
+    "cognitive-alignment"
+  ],
+  "author": "Wade Thomas Markham",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^11.1.0"
+  },
+  "wilson": {
+    "framework": "Boolean Language Framework",
+    "version": "BLF-1.0",
+    "cognitive_alignment": "2.89 + 0.1 = 2.99",
+    "om_compliance": true
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -26,4 +26,4 @@ const blfConfig = {
   }
 };
 
-module.exports = blfConfig; 
+export default blfConfig; 

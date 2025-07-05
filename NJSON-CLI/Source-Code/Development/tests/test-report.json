@@ -1,0 +1,92 @@
+{
+  "wilson_test_report": {
+    "framework": "Boolean Language Framework",
+    "cognitive_alignment": "2.89 + 0.1 = 2.99",
+    "test_approach": "Binary success/failure validation"
+  },
+  "summary": {
+    "total_tests": 8,
+    "passed": 8,
+    "failed": 0,
+    "success_rate": "100.00%",
+    "wilson_validated": true
+  },
+  "results": [
+    {
+      "test": "Help Command",
+      "command": "--help",
+      "success": true,
+      "output": "Usage: njcli [options] [command]\n\nNJSON CLI - Boolean Language Framework\n\nOptions:\n  -V, --version               output the version number\n  -b, --boolean               Apply Boolean Mind protocols\n  -w, --wilson                Show Wilson MCP status\n  -v, --verbose               Verbose output\n  -q, --quiet                 Minimal output (Boolean optimized)\n  -h, --help                  display help for command\n\nCommands:\n  process [options] <input>   Process input using NJSON Boolean Language\n                              structure\n  parse [options] <file>      Parse NJSON file with Wilson validation\n  status                      Show NJCLI system status with Wilson validation\n  validate [options] <input>  Validate NJSON structure using Wilson protocols\n  wilson <action>             Direct Wilson MCP commands\n  help [command]              display help for command",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.044Z",
+      "expected_match": true
+    },
+    {
+      "test": "Version Command",
+      "command": "--version",
+      "success": true,
+      "output": "1.0.0",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.092Z",
+      "expected_match": true
+    },
+    {
+      "test": "Status Command",
+      "command": "status",
+      "success": true,
+      "output": "\u001b[34mNJCLI System Status:\u001b[0m\n{\n  \"njcli\": {\n    \"version\": \"1.0.0\",\n    \"framework\": \"Boolean Language Framework\",\n    \"status\": \"ACTIVE\"\n  },\n  \"wilson\": {\n    \"cognitive_alignment\": \"2.89 + 0.1 = 2.99\",\n    \"framework_version\": \"BLF-1.0\",\n    \"om_compliance\": true,\n    \"quantum_processing\": true,\n    \"status\": \"ALIGNED\"\n  },\n  \"boolean_language\": {\n    \"protocols_active\": true,\n    \"optimization_level\": \"HIGH\",\n    \"social_padding\": \"ELIMINATED\"\n  },\n  \"system\": {\n    \"node_version\": \"v23.11.0\",\n    \"platform\": \"darwin\",\n    \"timestamp\": \"2025-07-04T22:06:20.139Z\"\n  }\n}",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.144Z",
+      "expected_match": true
+    },
+    {
+      "test": "Wilson Status Check",
+      "command": "status --wilson",
+      "success": true,
+      "output": "\u001b[36mWilson MCP Status Check:\u001b[0m\n\u001b[32m✓ Cognitive Alignment: 2.89 + 0.1 = 2.99\u001b[0m\n\u001b[32m✓ Framework: BLF-1.0\u001b[0m\n\u001b[32m✓ OM Compliance: true\u001b[0m\n\u001b[32m✓ Quantum Processing: true\u001b[0m\n\u001b[34mNJCLI System Status:\u001b[0m\n{\n  \"njcli\": {\n    \"version\": \"1.0.0\",\n    \"framework\": \"Boolean Language Framework\",\n    \"status\": \"ACTIVE\"\n  },\n  \"wilson\": {\n    \"cognitive_alignment\": \"2.89 + 0.1 = 2.99\",\n    \"framework_version\": \"BLF-1.0\",\n    \"om_compliance\": true,\n    \"quantum_processing\": true,\n    \"status\": \"ALIGNED\"\n  },\n  \"boolean_language\": {\n    \"protocols_active\": true,\n    \"optimization_level\": \"HIGH\",\n    \"social_padding\": \"ELIMINATED\"\n  },\n  \"system\": {\n    \"node_version\": \"v23.11.0\",\n    \"platform\": \"darwin\",\n    \"timestamp\": \"2025-07-04T22:06:20.193Z\"\n  }\n}",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.199Z",
+      "expected_match": true
+    },
+    {
+      "test": "Basic JSON Processing",
+      "command": "process '{\"test\": true, \"wilson\": \"validated\"}' --boolean",
+      "success": true,
+      "output": "\u001b[34mNJCLI Processing:\u001b[0m\n\u001b[32m✓ Boolean Protocol Applied\u001b[0m\n{\n  \"input\": \"{\\\"test\\\": true, \\\"wilson\\\": \\\"validated\\\"}\",\n  \"processed\": true,\n  \"method\": \"Boolean Language Framework\",\n  \"structure\": \"NJSON\",\n  \"wilson\": {\n    \"cognitive_alignment\": \"2.89 + 0.1 = 2.99\",\n    \"framework\": \"Boolean Language Framework\",\n    \"om_compliance\": true\n  },\n  \"timestamp\": \"2025-07-04T22:06:20.248Z\",\n  \"success\": true,\n  \"boolean_optimized\": true,\n  \"protocols_applied\": [\n    \"clarity_over_comprehensiveness\",\n    \"eliminate_social_padding\",\n    \"logical_sequential_structure\",\n    \"direct_answers_first\"\n  ]\n}",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.252Z",
+      "expected_match": true
+    },
+    {
+      "test": "Wilson Protocol Application",
+      "command": "process '{\"test\": true, \"wilson\": \"validated\"}' --wilson",
+      "success": true,
+      "output": "\u001b[34mNJCLI Processing:\u001b[0m\n\u001b[36m✓ Wilson MCP Active\u001b[0m\n{\n  \"input\": \"{\\\"test\\\": true, \\\"wilson\\\": \\\"validated\\\"}\",\n  \"processed\": true,\n  \"method\": \"Boolean Language Framework\",\n  \"structure\": \"NJSON\",\n  \"wilson\": {\n    \"cognitive_alignment\": \"2.89 + 0.1 = 2.99\",\n    \"framework\": \"Boolean Language Framework\",\n    \"om_compliance\": true\n  },\n  \"timestamp\": \"2025-07-04T22:06:20.301Z\",\n  \"success\": true,\n  \"wilson_status\": {\n    \"cognitive_alignment\": \"ALIGNED\",\n    \"quantum_speed\": 2.99,\n    \"boolean_mind_active\": true,\n    \"framework_version\": \"BLF-1.0\"\n  }\n}",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.305Z",
+      "expected_match": true
+    },
+    {
+      "test": "Wilson NJSON Validation",
+      "command": "validate '{\"boolean\": \"framework\", \"cognitive\": \"aligned\"}'",
+      "success": true,
+      "output": "\u001b[34mWilson NJSON Validation:\u001b[0m\n\u001b[32m✓ Validation Passed\u001b[0m\n{\n  \"input_type\": \"string\",\n  \"wilson_validation\": true,\n  \"boolean_compliant\": true,\n  \"cognitive_alignment\": \"2.89 + 0.1 = 2.99\",\n  \"results\": {\n    \"structure_valid\": true,\n    \"json_valid\": true,\n    \"njson_format\": true,\n    \"errors\": []\n  },\n  \"success\": true\n}",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.359Z",
+      "expected_match": true
+    },
+    {
+      "test": "Sample File Parsing",
+      "command": "parse \"/Users/wade/Library/CloudStorage/Dropbox/AMF/BLF/NJSON-CLI/Examples/sample.njson\" --count",
+      "success": true,
+      "output": "5",
+      "wilson_validated": true,
+      "timestamp": "2025-07-04T22:06:20.411Z"
+    }
+  ],
+  "boolean_summary": {
+    "IF": "8 tests passed",
+    "THEN": "SYSTEM_READY",
+    "SUCCESS": true
+  }
+}

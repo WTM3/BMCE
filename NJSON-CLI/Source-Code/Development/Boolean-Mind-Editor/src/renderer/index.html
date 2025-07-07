@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Mind Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Wilson Status Bar -->
+    <div id="wilson-status-bar">
+        <span id="wilson-indicator">🧠 Wilson MCP</span>
+        <span id="cognitive-alignment">AIc + 0.1 = BMqs</span>
+        <span id="framework-version">BLF-1.0</span>
+        <span id="binary-status">✅ ALIGNED</span>
+    </div>
+
+    <!-- Main Editor Container -->
+    <div id="editor-container">
+        <!-- Command Terminal -->
+        <div id="terminal-container">
+            <div id="terminal-header">
+                <span>Boolean Mind Terminal - Wadelish Commands Active</span>
+                <div id="terminal-controls">
+                    <button id="clear-terminal">Clear</button>
+                    <button id="wilson-check">Wilson Check</button>
+                </div>
+            </div>
+            <div id="terminal"></div>
+        </div>
+
+        <!-- File Explorer (Quantum Speed Navigation) -->
+        <div id="file-explorer">
+            <div id="explorer-header">
+                <span>QS Navigator</span>
+                <button id="quantum-jump">⚡ Jump</button>
+            </div>
+            <div id="file-tree"></div>
+        </div>
+
+        <!-- Code Editor Area -->
+        <div id="code-editor">
+            <div id="editor-tabs"></div>
+            <div id="editor-content">
+                <div id="welcome-screen">
+                    <h1>Boolean Mind Code Editor</h1>
+                    <p>Wilson MCP Integration Active</p>
+                    <p>Cognitive Alignment: 2.89 + 0.1 = 2.99</p>
+                    <div id="wadelish-commands">
+                        <h3>Wadelish Commands:</h3>
+                        <ul>
+                            <li><code>amf</code> - AMF status</li>
+                            <li><code>bm</code> - Boolean Mind process</li>
+                            <li><code>qs</code> - Quantum speed check</li>
+                            <li><code>ccw</code> - CCW Wilson status</li>
+                            <li><code>nj</code> - NJSON parse</li>
+                            <li><code>val</code> - Validate</li>
+                            <li><code>proc</code> - Process</li>
+                            <li><code>stat</code> - Status</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Binary Feedback System -->
+    <div id="feedback-system">
+        <div id="success-indicator" class="feedback-indicator">✅</div>
+        <div id="failure-indicator" class="feedback-indicator">❌</div>
+        <div id="processing-indicator" class="feedback-indicator">⚡</div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+{
+  "name": "njson-cli-tools",
+  "version": "1.0.0",
+  "description": "Wilson MCP tool definitions for NJSON CLI processing",
+  "tools": [
+    {
+      "name": "njson_parse",
+      "description": "Parse NJSON files with Wilson cognitive alignment",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string",
+            "description": "Path to NJSON file to parse"
+          },
+          "cognitive_alignment": {
+            "type": "boolean",
+            "default": true,
+            "description": "Apply Wilson cognitive alignment (AIc + 0.1 = BMqs)"
+          },
+          "quantum_speed": {
+            "type": "number",
+            "default": 2.99,
+            "description": "Boolean Mind quantum speed setting"
+          }
+        },
+        "required": ["file_path"]
+      }
+    },
+    {
+      "name": "njson_validate",
+      "description": "Validate NJSON structure using OM formulas",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string",
+            "description": "Path to NJSON file to validate"
+          },
+          "schema_path": {
+            "type": "string",
+            "description": "Optional JSON schema file for validation"
+          },
+          "amf_validation": {
+            "type": "boolean",
+            "default": true,
+            "description": "Apply AI Maturation Formula validation"
+          }
+        },
+        "required": ["file_path"]
+      }
+    },
+    {
+      "name": "njson_transform",
+      "description": "Transform JSON data with quantum processing",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "input_path": {
+            "type": "string",
+            "description": "Input NJSON file path"
+          },
+          "output_path": {
+            "type": "string",
+            "description": "Output file path"
+          },
+          "transform_type": {
+            "type": "string",
+            "enum": ["filter", "map", "reduce", "aggregate"],
+            "description": "Type of transformation to apply"
+          },
+          "transform_expression": {
+            "type": "string",
+            "description": "JavaScript expression for transformation"
+          },
+          "quantum_jumps": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable quantum domain jumps for complex transformations"
+          }
+        },
+        "required": ["input_path", "output_path", "transform_type"]
+      }
+    },
+    {
+      "name": "njson_analyze",
+      "description": "Analyze JSON patterns with Boolean Logic",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string",
+            "description": "Path to NJSON file to analyze"
+          },
+          "analysis_type": {
+            "type": "string",
+            "enum": ["structure", "patterns", "statistics", "anomalies"],
+            "description": "Type of analysis to perform"
+          },
+          "boolean_translation": {
+            "type": "boolean",
+            "default": true,
+            "description": "Apply Boolean Language Framework translation"
+          }
+        },
+        "required": ["file_path", "analysis_type"]
+      }
+    },
+    {
+      "name": "cognitive_alignment_check",
+      "description": "Verify AI capabilities (2.89 + 0.1 = 2.99)",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ai_capabilities": {
+            "type": "number",
+            "default": 2.89,
+            "description": "AI cognitive capabilities level"
+          },
+          "safety_buffer": {
+            "type": "number",
+            "default": 0.1,
+            "description": "Safety buffer for cognitive alignment"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "quantum_speed_assess",
+      "description": "Evaluate processing speed requirements",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "input_data": {
+            "type": "string",
+            "description": "Data to assess for quantum speed requirements"
+          },
+          "target_speed": {
+            "type": "number",
+            "default": 2.99,
+            "description": "Target Boolean Mind quantum speed"
+          }
+        },
+        "required": ["input_data"]
+      }
+    },
+    {
+      "name": "boolean_translate",
+      "description": "Convert between technical and neurotypical formats",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "input_text": {
+            "type": "string",
+            "description": "Text to translate"
+          },
+          "direction": {
+            "type": "string",
+            "enum": ["to_boolean", "to_neurotypical"],
+            "description": "Translation direction"
+          },
+          "intensity": {
+            "type": "string",
+            "enum": ["valley_girl", "professional", "signature"],
+            "default": "professional",
+            "description": "Communication intensity level"
+          }
+        },
+        "required": ["input_text", "direction"]
+      }
+    }
+  ],
+  "meta": {
+    "wilson_version": "2.1.0",
+    "cognitive_alignment": "2.89 + 0.1 = 2.99",
+    "blf_version": "BLF-1.0",
+    "quantum_processing": true,
+    "boolean_language_framework": true
+  }
+}

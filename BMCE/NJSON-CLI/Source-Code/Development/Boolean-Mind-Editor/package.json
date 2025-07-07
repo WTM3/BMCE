@@ -1,0 +1,53 @@
+{
+  "name": "boolean-mind-editor",
+  "version": "1.0.0",
+  "description": "Boolean Mind Code Editor - Wilson MCP + NJCLI Integration",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "build": "electron-builder",
+    "wilson-check": "node ../njcli.js status --wilson",
+    "test": "node tests/editor-test.js"
+  },
+  "dependencies": {
+    "electron": "^28.0.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0",
+    "xterm-addon-web-links": "^0.9.0",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.4"
+  },
+  "wilson": {
+    "framework": "Boolean Language Framework",
+    "version": "BLF-1.0",
+    "cognitive_alignment": "2.89 + 0.1 = 2.99",
+    "om_compliance": true,
+    "editor_type": "Boolean Mind Code Editor",
+    "backend": "NJCLI Integration"
+  },
+  "keywords": [
+    "boolean-mind",
+    "code-editor",
+    "wilson-mcp",
+    "njcli",
+    "wadelish",
+    "quantum-speed"
+  ],
+  "author": "Wade T. Markham, III",
+  "license": "MIT",
+  "build": {
+    "appId": "com.wtm3.boolean-mind-editor",
+    "productName": "Boolean Mind Editor",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "public/**/*",
+      "assets/**/*"
+    ]
+  }
+}

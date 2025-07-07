@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean Mind Code Editor</title>
+  <link rel="stylesheet" href="styles/mac-word.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <header class="editor-header">
+      <div class="title-bar">
+        <h1>Boolean Mind Code Editor</h1>
+        <div class="wilson-status" id="wilson-status">
+          <span class="status-indicator"></span>
+          <span class="status-text">Wilson: Initializing</span>
+        </div>
+      </div>
+    </header>
+    
+    <main class="editor-main">
+      <div class="editor-container">
+        <div class="editor-sidebar">
+          <div class="file-explorer">
+            <h3>Files</h3>
+            <div id="file-list"></div>
+          </div>
+          <div class="wadelish-commands">
+            <h3>Wadelish Commands</h3>
+            <input type="text" id="command-input" placeholder="Enter command...">
+            <div id="command-output"></div>
+          </div>
+        </div>
+        
+        <div class="editor-content">
+          <div class="editor-tabs" id="editor-tabs"></div>
+          <div class="editor-pane">
+            <textarea id="main-editor" placeholder="Welcome to Boolean Mind Code Editor"></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="editor-footer">
+      <div class="status-bar">
+        <span id="file-status">Ready</span>
+        <span id="wilson-feedback"></span>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>

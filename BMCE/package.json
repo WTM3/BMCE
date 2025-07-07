@@ -1,0 +1,44 @@
+{
+  "name": "bmce",
+  "version": "1.0.0",
+  "description": "Boolean Mind Code Editor - Natural language IDE with NJSON support and Wilson AI integration",
+  "main": "src/interface-engine/main.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "node scripts/build.js",
+    "wilson-setup": "node scripts/setup-wilson.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ide",
+    "editor",
+    "boolean-mind",
+    "njson",
+    "wilson",
+    "ai",
+    "electron"
+  ],
+  "author": "Wade",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+  },
+  "build": {
+    "appId": "com.wtm3.bmce",
+    "productName": "Boolean Mind Code Editor",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.developer-tools"
+    }
+  }
+}

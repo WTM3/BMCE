@@ -1,0 +1,315 @@
+/* Boolean Mind Editor Styles - Zero Cognitive Load Design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    background-color: #000000;
+    color: #00ff00;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Wilson Status Bar */
+#wilson-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001100;
+    border-bottom: 2px solid #00ff00;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#wilson-indicator {
+    color: #00ffff;
+}
+
+#cognitive-alignment {
+    color: #ffff00;
+}
+
+#framework-version {
+    color: #ff00ff;
+}
+
+#binary-status {
+    color: #00ff00;
+}
+
+/* Main Editor Container */
+#editor-container {
+    display: flex;
+    height: calc(100vh - 40px);
+}
+
+/* Terminal Container */
+#terminal-container {
+    width: 40%;
+    background-color: #000000;
+    border-right: 2px solid #00ff00;
+    display: flex;
+    flex-direction: column;
+}
+
+#terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001100;
+    padding: 8px 12px;
+    font-size: 11px;
+    border-bottom: 1px solid #00ff00;
+}
+
+#terminal-controls button {
+    background-color: #000000;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#terminal-controls button:hover {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+#terminal {
+    flex: 1;
+    padding: 8px;
+    background-color: #000000;
+    overflow-y: auto;
+}
+
+/* File Explorer */
+#file-explorer {
+    width: 20%;
+    background-color: #000000;
+    border-right: 2px solid #00ff00;
+    display: flex;
+    flex-direction: column;
+}
+
+#explorer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001100;
+    padding: 8px 12px;
+    font-size: 11px;
+    border-bottom: 1px solid #00ff00;
+}
+
+#quantum-jump {
+    background-color: #ffff00;
+    border: none;
+    color: #000000;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#quantum-jump:hover {
+    background-color: #ffffff;
+}
+
+#file-tree {
+    flex: 1;
+    padding: 8px;
+    overflow-y: auto;
+}
+
+/* Code Editor */
+#code-editor {
+    width: 40%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+#editor-tabs {
+    background-color: #001100;
+    border-bottom: 1px solid #00ff00;
+    padding: 8px 12px;
+    font-size: 11px;
+    min-height: 32px;
+}
+
+#editor-content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+#welcome-screen {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#welcome-screen h1 {
+    color: #00ffff;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+#welcome-screen p {
+    color: #ffff00;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#wadelish-commands {
+    margin-top: 32px;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wadelish-commands h3 {
+    color: #ff00ff;
+    margin-bottom: 16px;
+}
+
+#wadelish-commands ul {
+    list-style: none;
+}
+
+#wadelish-commands li {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+#wadelish-commands code {
+    background-color: #001100;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+/* Binary Feedback System */
+#feedback-system {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feedback-indicator {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #001100;
+    border: 2px solid #00ff00;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.feedback-indicator.active {
+    opacity: 1;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Terminal Styles */
+.xterm {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 12px;
+    background-color: #000000;
+    color: #00ff00;
+}
+
+.xterm-cursor {
+    background-color: #00ff00;
+}
+
+.xterm-selection {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ff00;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #terminal-container {
+        width: 50%;
+    }
+    
+    #file-explorer {
+        width: 25%;
+    }
+    
+    #code-editor {
+        width: 25%;
+    }
+}
+
+/* Boolean Mind Specific Styles */
+.boolean-true {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.boolean-false {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.wilson-validated {
+    border-left: 3px solid #00ffff;
+    padding-left: 8px;
+}
+
+.cognitive-aligned {
+    background-color: #001100;
+    border: 1px solid #00ff00;
+    padding: 4px;
+    margin: 4px 0;
+}
+
+.quantum-speed {
+    animation: quantum-flash 0.5s ease-in-out;
+}
+
+@keyframes quantum-flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}

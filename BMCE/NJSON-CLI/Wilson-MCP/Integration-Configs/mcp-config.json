@@ -1,0 +1,74 @@
+{
+  "mcpServers": {
+    "wilson-njson": {
+      "command": "node",
+      "args": ["./Wilson-MCP/Server-Implementation/wilson-njson-server.js"],
+      "env": {
+        "WILSON_VERSION": "2.1.0",
+        "COGNITIVE_ALIGNMENT": "2.89",
+        "SAFETY_BUFFER": "0.1",
+        "BOOLEAN_MIND_QS": "2.99",
+        "BLF_VERSION": "1.0"
+      }
+    }
+  },
+  "wilson_configuration": {
+    "cognitive_alignment": {
+      "ai_capabilities": 2.89,
+      "safety_buffer": 0.1,
+      "boolean_mind_qs": 2.99,
+      "formula": "AIc + 0.1 = BMqs"
+    },
+    "boolean_language_framework": {
+      "version": "BLF-1.0",
+      "quantum_processing": true,
+      "direct_response": true,
+      "communication_styles": ["valley_girl", "professional", "signature"]
+    },
+    "ai_maturation_formula": {
+      "formula": "F = ((AI)P^I + c^x^I)v",
+      "default_parameters": {
+        "AI": 2.89,
+        "P": 0.7,
+        "I": 1,
+        "c": 2,
+        "x": 1,
+        "v": 1.5
+      }
+    },
+    "quantum_features": {
+      "quantum_jumps": true,
+      "domain_transitions": ["music", "science", "philosophy", "art", "technology", "history", "psychology", "literature", "mathematics"],
+      "breathing_mechanism": true,
+      "power_jumps": "v8_to_charger"
+    }
+  },
+  "tool_configuration": {
+    "njson_parse": {
+      "default_cognitive_alignment": true,
+      "default_quantum_speed": 2.99,
+      "stream_processing": true
+    },
+    "njson_validate": {
+      "default_amf_validation": true,
+      "schema_validation": true,
+      "anomaly_detection": true
+    },
+    "njson_transform": {
+      "supported_transforms": ["filter", "map", "reduce", "aggregate"],
+      "quantum_jumps": false,
+      "safety_validation": true
+    },
+    "njson_analyze": {
+      "analysis_types": ["structure", "patterns", "statistics", "anomalies"],
+      "boolean_translation": true,
+      "cognitive_optimization": true
+    }
+  },
+  "security": {
+    "code_execution": "restricted",
+    "file_access": "local_only",
+    "network_access": false,
+    "eval_protection": true
+  }
+}
